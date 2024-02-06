@@ -13,7 +13,12 @@ A Python module to create a Shell session.
 ## Installation
 
 - clone the repository
-- run `python setup.py install`
+- run 
+  ```shell
+  python setup.py build &&
+  python setup.py test &&
+  python setup.py install
+  ```
 
 ## Usage
 
