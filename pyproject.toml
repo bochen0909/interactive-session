@@ -6,7 +6,7 @@ authors = ["Bo Chen <bo.chen@usfoods.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.8"
 
 
 [tool.poetry.group.dev.dependencies]
