@@ -1,6 +1,6 @@
 # Available at setup time due to pyproject.toml
 from pybind11.setup_helpers import Pybind11Extension, build_ext
-from setuptools import setup
+from setuptools import setup, find_packages
 
 __version__ = "0.0.1"
 
@@ -22,14 +22,19 @@ ext_modules = [
     ),
 ]
 
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
+
 setup(
     name="interactive-session",
     version=__version__,
     author="Bo Chen",
     author_email="bochen0909@gmail.com",
     url="https://github.com/bochen0909/interactive-session",
-    description="A test project using pybind11",
+    description="A shell session project using pybind11",
     long_description="",
+    packages=find_packages(),
+    install_requires=requirements,
     ext_modules=ext_modules,
     extras_require={"test": "pytest"},
     # Currently, build_ext only provides an optional "highest supported C++
