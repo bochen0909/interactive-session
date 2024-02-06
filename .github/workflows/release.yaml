@@ -45,7 +45,16 @@ jobs:
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         repository-url: https://test.pypi.org/legacy/
+    
+    - name: Test the package (PyPI test server)
+      run: |
+        pip install --index-url https://test.pypi.org/simple/ interactive-session
+        python -c "import interactive_session"
 
     - name: Publish package distributions to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
-      
+    
+    - name: Test the package (PyPI server)
+      run: |
+        pip install interactive-session
+        python -c "import interactive_session"
