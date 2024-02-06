@@ -1,4 +1,4 @@
-name: Release
+name: Pypi Release
 
 on:
   push:
@@ -41,12 +41,6 @@ jobs:
     - name: Run tests
       run: python setup.py test
 
-    - name: Publish Release
-      uses: softprops/action-gh-release@v1
-      with:
-        files: dist/*
-        token: ${{ secrets.GITHUB_TOKEN }}
-    
     - name: Publish package distributions to TestPyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
