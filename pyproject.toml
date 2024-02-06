@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "interactive-session"
-version = "0.0.1"
+version = "0.0.2"
 description = ""
 authors = ["Bo Chen <bochen0909@gmail.com>"]
 readme = "README.md"

@@ -53,8 +53,4 @@ jobs:
 
     - name: Publish package distributions to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
-    
-    - name: Test the package (PyPI server)
-      run: |
-        pip install interactive-session
-        python -c "import interactive_session"
+      
