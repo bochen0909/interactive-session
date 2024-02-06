@@ -24,6 +24,10 @@ ext_modules = [
 with open('requirements.txt') as f:
     requirements = f.read().splitlines()
 
+# Read the contents of README.md
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
     name="interactive-session",
     version=__version__,
@@ -31,7 +35,7 @@ setup(
     author_email="bochen0909@gmail.com",
     url="https://github.com/bochen0909/interactive-session",
     description="A shell session project using pybind11",
-    long_description="",
+    long_description=long_description,
     packages=find_packages(),
     install_requires=requirements,
     ext_modules=ext_modules,

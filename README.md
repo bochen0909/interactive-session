@@ -15,6 +15,7 @@ A Python module to create a Shell session.
 - clone the repository
 - run 
   ```shell
+  pip install -r requirements.txt &&
   python setup.py build &&
   python setup.py test &&
   python setup.py install
