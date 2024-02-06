@@ -1,10 +1,10 @@
-# Project Name
+# Interactive Session
 
 A Python module to create a Shell session.
 
 ## Table of Contents
 
-- [Project Name](#project-name)
+- [Interactive Session](#interactive-session)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
