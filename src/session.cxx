@@ -1,6 +1,9 @@
 #include <unistd.h>
 #include <signal.h>
 #include <fcntl.h>
+#include <sys/wait.h>
+#include <stdexcept>
+#include <cstring>
 #include "session.hpp"
 
 static bool
