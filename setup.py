@@ -36,6 +36,7 @@ setup(
     url="https://github.com/bochen0909/interactive-session",
     description="A shell session project using pybind11",
     long_description=long_description,
+    long_description_content_type='text/markdown',
     packages=find_packages(),
     install_requires=requirements,
     ext_modules=ext_modules,
